@@ -1,24 +1,69 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.quote-box {
+  margin: 3em auto;
+  display: flex;
+  flex-direction: column;
+  width: 75vw;
+  height: 75vh;
+}
+
+.grey-strip {
+  background-color: rgba(217, 216, 216, 1);
+  border-top: 0.5px solid black;
+  border-left: 0.5px solid black;
+  border-right: 0.5px solid black;
+  padding-left: 0.5em;
+  /* height: 1.5em; */
+}
+
+.quote-content {
+  margin: auto;
+  color: rgba(255, 255, 255, 1);
   text-align: center;
+  padding: 1em;
+  width: 75vw;
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  border: 0.5px solid black;
+  background-color: rgba(0, 0, 255, 1);
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.quote-text {
+  margin: 2em auto;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.quote-author {
+  margin: 1em auto;
 }
 
-.App-intro {
-  font-size: large;
+.links {
+  background-color: rgba(255, 255, 255, 1);
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 0.5em;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.btn:visited {
+  color: black;
+}
+
+.btn:active {
+  color: black;
+  transform: translateY(1px);
+  box-shadow: 1px 1px rgba(100, 100, 100, 0.75);
+}
+
+.btn {
+  text-decoration: none;
+  border: 0.5px solid black;
+  padding: 0.2em;
+  background-color: rgba(217, 216, 216, 1);
+  box-shadow: 2px 2px rgba(100, 100, 100, 1);
 }
